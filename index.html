@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <title>Pick one</title>
+  <script>
+
+
+    function pickOne() {
+      const randomArray = ["Peter", "Marlon", "Sven", "Emil", "Fausto", "Marco", "Tom", "Greta", "Ruth", "Max Fischer", "Marius⚽️", "Svenja👓", "Daniil", "Miriam", "Alex", "Coline", "Max Falko", "Julian Fornoff", "Ron", "Julian Vaske", "Kevin", "FloHo", "Alexej", "Phil", "Daniyal", "Marcus", "Rosa", "Kourtney", "Kristina", "Garcia", "Stefanie", "Jakob", "Moritz", "Niklas", "Berrin", "Naomi"]
+      document.getElementById("result").innerHTML = "";
+      document.getElementById("heart").style.display = "block";
+      setTimeout(function () {
+        document.getElementById("heart").style.display = "none";
+        const rand = randomArray[Math.floor(Math.random() * randomArray.length)];
+        document.getElementById("result").innerHTML = rand;
+      }, 3000);
+    }
+
+  </script>
+
+  <style>
+    body {
+      background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .red-button {
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+      margin-top: -50px;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      background: #e55050;
+      border-radius: 100px;
+      box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113, 17, 17, 0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #d32020, 2px 2px 0 0 #c61e1e, 3px 3px 0 0 #b81c1c, 4px 4px 0 0 #ab1a1a, 5px 5px 0 0 #9e1818, 6px 6px 0 0 #901616, 7px 7px 0 0 #881414, 8px 8px 0 0 #831414, 9px 9px 0 0 #7f1313, 10px 10px 0 0 #7a1212, 11px 11px 0 0 #761212, 12px 12px 0 0 #711111, 13px 13px 0 0 #711111, 14px 14px 0 0 #711111, 15px 15px 0 0 #711111, 16px 16px 0 0 #711111, 17px 17px 0 0 #711111, 18px 18px 0 0 #711111, 19px 19px 0 0 #711111, 20px 20px 0 0 #711111, 19px 21px 1pc 1px rgba(113, 17, 17, 0.1), 18px 22px 1px 1px rgba(113, 17, 17, 0.1), 17px 23px 1px 1px rgba(113, 17, 17, 0.1), 16px 24px 1px 1px rgba(113, 17, 17, 0.1), 15px 25px 1px 1px rgba(113, 17, 17, 0.1), 14px 26px 2px 1px rgba(113, 17, 17, 0.1), 13px 27px 3px 1px rgba(113, 17, 17, 0.1), 12px 28px 4px 1px rgba(113, 17, 17, 0.1), 11px 29px 5px 1px rgba(113, 17, 17, 0.1), 10px 30px 6px 1px rgba(113, 17, 17, 0.1), 9px 31px 7px 1px rgba(113, 17, 17, 0.1), 20px 20px 4px 1px #711111;
+      transition: all 0.4s ease-out;
+      cursor: pointer;
+      border: none;
+      color: white;
+      z-index: 100;
+    }
+
+    .red-button:active {
+      transition: all 0.15s ease-out;
+      margin-left: -31px;
+      margin-top: -31px;
+      background: #e86666;
+      box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113, 17, 17, 0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 2px 1px rgba(113, 17, 17, 0.5), 0px 0px 4px 1px #711111;
+    }
+
+    .red-button:active+h1 {
+      opacity: 1;
+      transition: all 0.15s ease-out;
+      transition-delay: 0.25s;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    #result {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      margin: auto;
+      height: 50px;
+      width: 100vw;
+      text-align: center;
+      font-size: 100px;
+      font-weight: bold;
+    }
+
+    .lds-heart {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 64px;
+      height: 64px;
+      transform: rotate(45deg);
+      transform-origin: 32px 32px;
+      display: none;
+    }
+
+    .lds-heart div {
+      top: 23px;
+      left: 19px;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: rgba(207, 0, 15, 1);
+      animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .lds-heart div:after,
+    .lds-heart div:before {
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: rgba(207, 0, 15, 1);
+    }
+
+    .lds-heart div:before {
+      left: -28px;
+      border-radius: 50% 0 0 50%;
+    }
+
+    .lds-heart div:after {
+      top: -28px;
+      border-radius: 50% 50% 0 0;
+    }
+
+    @keyframes lds-heart {
+      0% {
+        transform: scale(0.95);
+      }
+
+      5% {
+        transform: scale(1.1);
+      }
+
+      39% {
+        transform: scale(0.85);
+      }
+
+      45% {
+        transform: scale(1);
+      }
+
+      60% {
+        transform: scale(0.95);
+      }
+
+      100% {
+        transform: scale(0.9);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <button class="red-button" onclick="pickOne()">
+      <img height="70px" src="./store2be.png">
+    </button>
+    <div id="heart" class="lds-heart">
+      <div></div>
+    </div>
+    <div id="result"></div>
+  </div>
+</body>
+
+</html>
