@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="😁">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <title>Pick one</title>
@@ -11,7 +12,7 @@
 
 
     function pickOne() {
-      const randomArray = ["Peter", "Marlon", "Sven", "Emil", "Fausto", "Marco", "Tom", "Greta", "Ruth", "Max Fischer", "Marius⚽️", "Svenja👓", "Daniil", "Miriam", "Alex", "Coline", "Max Falko", "Julian Fornoff", "Ron", "Julian Vaske", "Kevin", "FloHo", "Alexej", "Phil", "Daniyal", "Marcus", "Rosa", "Kourtney", "Kristina", "Garcia", "Stefanie", "Jakob", "Moritz", "Niklas", "Berrin", "Naomi"]
+      const randomArray = ["Peter 💪🏼", "Marlon 💪🏼", "Sven 💰", "Emil 🎨", "Fausto 🎸", "Marco 💼", "Tom 🐶", "Greta⚽️", "Ruth 💔", "Max Fischer🔥", "Marius⚽️", "Svenja👓", "Daniil😎", "Miriam👮🏼‍♀️", "Alex🚴🏼", "Coline🎤", "Max Falko💛", "Julian Fornoff📊", "Ron🚔", "Julian Vaske🤘🏽", "Kevin🎥", "FloHo💸", "Alexej 🏆", "Phil💻", "Daniyal🇵🇰", "Marcus🇬🇧", "Rosa 💁🏼", "Kourtney 🇺🇸", "Kristina 🎉", "Garcia 🕵🏽", "Stefanie 💪🏼", "Jakob 👓", "Moritz 🏒", "Niklas 💪🏼", "Berrin 🤘🏽", "Naomi🤓"]
       document.getElementById("result").innerHTML = "";
       document.getElementById("heart").style.display = "block";
       setTimeout(function () {
@@ -53,7 +54,12 @@
       margin-left: -31px;
       margin-top: -31px;
       background: #e86666;
+      outline: none;
       box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113, 17, 17, 0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 2px 1px rgba(113, 17, 17, 0.5), 0px 0px 4px 1px #711111;
+    }
+
+    .red-button:focus {
+      outline: none;
     }
 
     .red-button:active+h1 {
